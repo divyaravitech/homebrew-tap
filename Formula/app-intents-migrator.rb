@@ -2,7 +2,10 @@ class AppIntentsMigrator < Formula
   desc "Scan and migrate SiriKit code to App Intents"
   homepage "https://github.com/divyaravitech/AppIntentsMigrator"
   url "https://github.com/divyaravitech/AppIntentsMigrator/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+  # Recompute with Scripts/update-formula-sha.sh once the repository is public —
+  # the release tarball 404s while it is private, and a naive curl|shasum will
+  # silently hash the error page.
+  sha256 "4a00e12b8d06c544814897a7719859bd647ceef48ddd499afebb77e96948220c"
   license "MIT"
   head "https://github.com/divyaravitech/AppIntentsMigrator.git", branch: "main"
 
